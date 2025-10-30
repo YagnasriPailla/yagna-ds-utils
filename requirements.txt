@@ -1,0 +1,2 @@
+--extra-index-url https://test.pypi.org/simple
+yagna-ds-utils==0.1.0

@@ -1,0 +1,34 @@
+
+### `LICENSE`
+Pick **MIT** (you can copy a generic MIT text).
+
+---
+
+## 3) Commit & push (GitHub Desktop)
+
+- Summary: **“Initial package: yagna-ds-utils 0.1.0”**
+- Commit to `main` → **Push origin**.
+
+---
+
+## 4) Create a **TestPyPI** account + token (one time)
+
+1. Go to **https://test.pypi.org** → Sign up / Log in.
+2. **Account settings → API tokens → “Add API token”**  
+   - Scope: “Entire account” is fine for now.
+   - Copy the token (starts with `pypi-...`). **Save it**.
+
+---
+
+## 5) Build and upload
+
+From your repo folder:
+
+```bash
+# build
+python3 -m build
+
+# You’ll get dist/yagna_ds_utils-0.1.0.tar.gz and .whl
+
+# upload to TestPyPI (paste your token when prompted)
+python3 -m twine upload --repository testpypi dist/*

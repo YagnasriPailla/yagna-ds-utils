@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yagna-ds-utils"
+version = "0.1.0"
+description = "Tiny helpers for loading models and predicting from CSV."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{name="Yagna Sri Pailla"}]
+license = {text = "MIT"}
+dependencies = [
+  "pandas==2.2.2",
+  "joblib==1.4.2",
+  "scikit-learn==1.5.1"
+]
+
+[project.urls]
+Homepage = "https://github.com/YagnasriPailla/yagna-ds-utils"
